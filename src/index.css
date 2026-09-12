@@ -1,0 +1,49 @@
+:root {
+  --felt-1: #0f3d32;
+  --felt-2: #145a45;
+  --rail: #241610;
+  --rail-hi: #4a3220;
+  --gold: #cda149;
+  --gold-dim: #8a7038;
+  --cream: #f1ead9;
+  --cream-dim: #c9c0ad;
+  --muted: #7f9488;
+  --danger: #b8495a;
+  --go: #5a9c6e;
+  --card-bg: #faf6ec;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: radial-gradient(ellipse at 50% -10%, #1a2a22 0%, #0b1410 60%, #060a08 100%);
+  color: var(--cream);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .serif {
+  font-family: 'Fraunces', serif;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+input {
+  font-family: 'Inter', sans-serif;
+}
+
+::selection {
+  background: var(--gold);
+  color: #20140a;
+}

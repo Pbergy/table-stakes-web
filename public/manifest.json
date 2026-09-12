@@ -1,0 +1,9 @@
+{
+  "short_name": "Table Stakes",
+  "name": "Table Stakes Poker",
+  "description": "Real-time multiplayer poker game",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0f3d32",
+  "background_color": "#ffffff"
+}

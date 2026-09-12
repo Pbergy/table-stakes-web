@@ -1,0 +1,205 @@
+.home {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15));
+  border: 1px solid rgba(205, 161, 73, 0.14);
+  border-radius: 12px;
+}
+
+.header-left h1 {
+  margin: 0;
+  color: var(--gold);
+  font-size: 28px;
+}
+
+.header-left p {
+  margin: 5px 0 0;
+  color: var(--cream-dim);
+}
+
+.logout-btn {
+  background: rgba(184, 73, 90, 0.18);
+  color: #f0b6bf;
+  border: 1px solid rgba(184, 73, 90, 0.45);
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.logout-btn:hover {
+  background: rgba(184, 73, 90, 0.3);
+}
+
+.home-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(205, 161, 73, 0.2);
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: var(--cream-dim);
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s;
+}
+
+.tab.active {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+.tab:hover {
+  color: var(--cream);
+}
+
+.rooms-container {
+  background: linear-gradient(180deg, #16211b, #101a15);
+  border: 1px solid rgba(205, 161, 73, 0.18);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.section-title {
+  font-size: 16px;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.room-card {
+  background: rgba(10, 20, 16, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+  transition: all 0.2s;
+}
+
+.room-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 0 18px rgba(205, 161, 73, 0.25);
+}
+
+.room-card h3 {
+  margin: 0 0 10px;
+  color: var(--cream);
+  font-size: 18px;
+}
+
+.room-code {
+  color: var(--gold);
+  font-size: 12px;
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.room-players {
+  color: var(--cream-dim);
+  font-size: 12px;
+  margin: 5px 0 15px;
+}
+
+.btn-join {
+  width: 100%;
+  background: linear-gradient(180deg, #e3bd6d, var(--gold));
+  color: #1a1208;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.15s;
+}
+
+.btn-join:hover {
+  filter: brightness(1.07);
+}
+
+.create-room-container {
+  background: linear-gradient(180deg, #16211b, #101a15);
+  border: 1px solid rgba(205, 161, 73, 0.18);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 500px;
+}
+
+.create-room-container form label {
+  display: block;
+  font-size: 12.5px;
+  color: var(--cream-dim);
+  margin-bottom: 8px;
+}
+
+.create-room-container form input {
+  width: 100%;
+  padding: 11px 13px;
+  border-radius: 9px;
+  border: 1px solid rgba(241, 234, 217, 0.16);
+  background: rgba(0, 0, 0, 0.22);
+  color: var(--cream);
+  font-size: 15px;
+  outline: none;
+  margin-bottom: 20px;
+  transition: border-color 0.15s;
+}
+
+.create-room-container form input:focus {
+  border-color: var(--gold-dim);
+}
+
+.btn-create {
+  width: 100%;
+  background: linear-gradient(180deg, #e3bd6d, var(--gold));
+  color: #1a1208;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 14.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.15s;
+}
+
+.btn-create:hover {
+  filter: brightness(1.07);
+}
+
+.error-msg {
+  color: #e79aa5;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: var(--cream-dim);
+}
